@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <PackageId>AppLogger</PackageId>
+    <Version>0.9.0</Version>
+    <Authors>Harrison Barker</Authors>
+    <Company>Egotistic</Company>
   </PropertyGroup>
 
   <ItemGroup>

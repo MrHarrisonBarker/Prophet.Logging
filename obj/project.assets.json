@@ -279,7 +279,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/harrison/Desktop/Prophet/Prophet.Logging/Prophet.Logging.csproj",
-      "projectName": "Prophet.Logging",
+      "projectName": "AppLogger",
       "projectPath": "/Users/harrison/Desktop/Prophet/Prophet.Logging/Prophet.Logging.csproj",
       "packagesPath": "/Users/harrison/.nuget/packages/",
       "outputPath": "/Users/harrison/Desktop/Prophet/Prophet.Logging/obj/",
