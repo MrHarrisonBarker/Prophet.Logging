@@ -41,7 +41,6 @@ namespace Prophet.Logging
             Producer.Produce(Topic, new Message<Null, string> {Value = serialisedLog});
             
             Producer.Flush();
-            // Producer.Dispose();
         }
     }
 }
