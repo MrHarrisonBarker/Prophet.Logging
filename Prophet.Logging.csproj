@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageId>AppLogger</PackageId>
+    <PackageId>Prophet.Logging</PackageId>
     <Version>0.9.0</Version>
     <Authors>Harrison Barker</Authors>
     <Company>Egotistic</Company>
+    <RepositoryUrl>https://github.com/MrHarrisonBarker/Prophet.Logging</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
