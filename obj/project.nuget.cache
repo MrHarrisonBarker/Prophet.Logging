@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "0TBM4UrhVNYI6YCPWeKHjYrC5iMn8WuHcI7wlqazUuZriOj/CNSno1G1070Jrp2NryrwlDrgpogLGRxFH2j5FA==",
+  "success": true,
+  "projectFilePath": "/Users/harrison/Desktop/Prophet/Prophet.Logging/Prophet.Logging.csproj",
+  "expectedPackageFiles": [
+    "/Users/harrison/.nuget/packages/confluent.kafka/1.6.3/confluent.kafka.1.6.3.nupkg.sha512",
+    "/Users/harrison/.nuget/packages/librdkafka.redist/1.6.1/librdkafka.redist.1.6.1.nupkg.sha512",
+    "/Users/harrison/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.5/microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
+    "/Users/harrison/.nuget/packages/serilog/2.10.0/serilog.2.10.0.nupkg.sha512",
+    "/Users/harrison/.nuget/packages/system.memory/4.5.0/system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
