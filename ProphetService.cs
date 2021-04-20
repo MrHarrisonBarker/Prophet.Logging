@@ -25,8 +25,6 @@ namespace Prophet.Logging
             Topic = topic;
             ConsumerConfig.GroupId = group;
             ConsumerConfig.BootstrapServers = bootstrapServers;
-
-            Console.WriteLine($"prophet service built with {ConsumerConfig.GroupId} : {ConsumerConfig.BootstrapServers}");
         }
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken)

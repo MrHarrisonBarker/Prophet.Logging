@@ -11,6 +11,7 @@ namespace Prophet.Logging
     {
         private readonly string ServiceName;
         private readonly string Topic;
+        private readonly Guid InstanceId;
         private readonly IProducer<Null, string> Producer;
 
         private readonly ProducerConfig ProducerConfig = new()
@@ -18,10 +19,11 @@ namespace Prophet.Logging
             ClientId = Dns.GetHostName()
         };
 
-        public ProphetSink(string serviceName, string bootstrapServers, string topic)
+        public ProphetSink(string serviceName, Guid instanceId, string bootstrapServers, string topic)
         {
             ProducerConfig.BootstrapServers = bootstrapServers;
             ServiceName = serviceName;
+            InstanceId = instanceId;
             Topic = topic;
             Producer = new ProducerBuilder<Null, string>(ProducerConfig).Build();
         }
@@ -35,11 +37,12 @@ namespace Prophet.Logging
                 Exception = logEvent.Exception,
                 Timestamp = logEvent.Timestamp,
                 LogLevel = logEvent.Level,
-                Service = ServiceName
+                Service = ServiceName,
+                InstanceId = InstanceId
             });
 
             Producer.Produce(Topic, new Message<Null, string> {Value = serialisedLog});
-            
+
             Producer.Flush();
         }
     }

@@ -15,5 +15,6 @@ namespace Prophet.Logging
         [NotMapped] public Exception Exception { get; set; }
         public String Message { get; set; }
         public String Service { get; set; }
+        public Guid InstanceId { get; set; }
     }
 }
